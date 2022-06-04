@@ -41,3 +41,5 @@ public class RemoveEventInt {
         return oddArray;
     }
 }
+
+// Time Complexity = O(n)
