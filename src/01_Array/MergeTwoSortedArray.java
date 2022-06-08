@@ -1,4 +1,3 @@
-
 ///**** Problem Statement ****///
 // In this problem, you have to implement the int [] mergeArray(int[] arr1, int[] arr2) method, 
 // which merge 2 sorted array with result also sorted array

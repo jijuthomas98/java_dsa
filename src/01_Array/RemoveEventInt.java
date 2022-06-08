@@ -1,5 +1,4 @@
-
-///**** Problem Statement ****///
+//**** Problem Statement ****///
 // In this problem, you have to implement the int [] removeEven(int[] arr) method, 
 // which removes all the even elements from the array and returns back updated array.
 
