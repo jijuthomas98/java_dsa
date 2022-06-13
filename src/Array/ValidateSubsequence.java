@@ -22,6 +22,7 @@ public class ValidateSubsequence {
         List<Integer> subsequence = new ArrayList<Integer>(Arrays.asList(3, 5, 6));
 
         boolean result = isValidSubsequence(arrayList, subsequence);
+        // boolean result = isValidSubsequenceUsingForLoop(arrayList, subsequence);
         System.out.println(result);
     }
 
@@ -43,6 +44,25 @@ public class ValidateSubsequence {
         }
         // after exiting from loop retrun subequence pointer == subequence.size()
         return subsequencePointer == subsequence.size();
+    }
+
+    private static boolean isValidSubsequenceUsingForLoop(List<Integer> arrayList, List<Integer> subsequence) {
+        // create an counter veriable for subsequence
+        int subseqenceCounter = 0;
+        // run for loop on arrayList
+        for (int value : subsequence) {
+            // if counter is equal to subseqence then return true
+            if (subseqenceCounter == subsequence.size()) {
+                return true;
+            }
+            if (subsequence.get(subseqenceCounter).equals(value)) {
+                // else incement counter
+                subseqenceCounter++;
+            }
+        }
+
+        // return counter == subseqence.size()
+        return subseqenceCounter == subsequence.size();
     }
 
 }
